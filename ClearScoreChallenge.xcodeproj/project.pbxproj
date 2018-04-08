@@ -14,6 +14,13 @@
 		4577DA2F207A9C3100D011D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4577DA2D207A9C3100D011D2 /* LaunchScreen.storyboard */; };
 		4577DA3A207A9C3100D011D2 /* ClearScoreChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577DA39207A9C3100D011D2 /* ClearScoreChallengeTests.swift */; };
 		4577DA47207A9DAB00D011D2 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4577DA46207A9DAB00D011D2 /* Dashboard.storyboard */; };
+		4577DA4D207AA50500D011D2 /* CustomDebugStringConvertible+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577DA4C207AA50500D011D2 /* CustomDebugStringConvertible+Utils.swift */; };
+		4577DA50207AA53000D011D2 /* CreditScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577DA4F207AA53000D011D2 /* CreditScore.swift */; };
+		4577DA56207AA5E100D011D2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577DA55207AA5E100D011D2 /* Result.swift */; };
+		4577DA58207AA5FF00D011D2 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577DA57207AA5FF00D011D2 /* Configuration.swift */; };
+		4577DA5A207AA63800D011D2 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577DA59207AA63800D011D2 /* JSONParser.swift */; };
+		4577DA5D207AA65A00D011D2 /* credit.json in Resources */ = {isa = PBXBuildFile; fileRef = 4577DA5C207AA65A00D011D2 /* credit.json */; };
+		4577DA5F207AA81500D011D2 /* ClearScoreCreditService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577DA5E207AA81500D011D2 /* ClearScoreCreditService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +45,13 @@
 		4577DA39207A9C3100D011D2 /* ClearScoreChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearScoreChallengeTests.swift; sourceTree = "<group>"; };
 		4577DA3B207A9C3100D011D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4577DA46207A9DAB00D011D2 /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		4577DA4C207AA50500D011D2 /* CustomDebugStringConvertible+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomDebugStringConvertible+Utils.swift"; sourceTree = "<group>"; };
+		4577DA4F207AA53000D011D2 /* CreditScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScore.swift; sourceTree = "<group>"; };
+		4577DA55207AA5E100D011D2 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		4577DA57207AA5FF00D011D2 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		4577DA59207AA63800D011D2 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		4577DA5C207AA65A00D011D2 /* credit.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = credit.json; sourceTree = "<group>"; };
+		4577DA5E207AA81500D011D2 /* ClearScoreCreditService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearScoreCreditService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +93,9 @@
 		4577DA23207A9C3000D011D2 /* ClearScoreChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				4577DA4E207AA52300D011D2 /* Model */,
+				4577DA4B207AA4E800D011D2 /* Utils */,
+				4577DA4A207AA46200D011D2 /* Network */,
 				4577DA44207A9D8500D011D2 /* ViewControllers */,
 				4577DA24207A9C3000D011D2 /* AppDelegate.swift */,
 				4577DA28207A9C3000D011D2 /* Main.storyboard */,
@@ -92,6 +109,7 @@
 		4577DA38207A9C3100D011D2 /* ClearScoreChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				4577DA5B207AA64500D011D2 /* Network */,
 				4577DA39207A9C3100D011D2 /* ClearScoreChallengeTests.swift */,
 				4577DA3B207A9C3100D011D2 /* Info.plist */,
 			);
@@ -113,6 +131,41 @@
 				4577DA26207A9C3000D011D2 /* DashboardViewController.swift */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		4577DA4A207AA46200D011D2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4577DA59207AA63800D011D2 /* JSONParser.swift */,
+				4577DA5E207AA81500D011D2 /* ClearScoreCreditService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4577DA4B207AA4E800D011D2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4577DA4C207AA50500D011D2 /* CustomDebugStringConvertible+Utils.swift */,
+				4577DA55207AA5E100D011D2 /* Result.swift */,
+				4577DA57207AA5FF00D011D2 /* Configuration.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4577DA4E207AA52300D011D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4577DA4F207AA53000D011D2 /* CreditScore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4577DA5B207AA64500D011D2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4577DA5C207AA65A00D011D2 /* credit.json */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4577DA5D207AA65A00D011D2 /* credit.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +272,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4577DA27207A9C3000D011D2 /* DashboardViewController.swift in Sources */,
+				4577DA5A207AA63800D011D2 /* JSONParser.swift in Sources */,
+				4577DA4D207AA50500D011D2 /* CustomDebugStringConvertible+Utils.swift in Sources */,
+				4577DA56207AA5E100D011D2 /* Result.swift in Sources */,
 				4577DA25207A9C3000D011D2 /* AppDelegate.swift in Sources */,
+				4577DA58207AA5FF00D011D2 /* Configuration.swift in Sources */,
+				4577DA50207AA53000D011D2 /* CreditScore.swift in Sources */,
+				4577DA5F207AA81500D011D2 /* ClearScoreCreditService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
