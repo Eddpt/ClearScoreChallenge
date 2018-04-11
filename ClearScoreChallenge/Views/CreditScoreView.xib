@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="CreditScoreView" customModule="ClearScoreChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="204" height="164"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Credit score is" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3HL-Ba-cni" userLabel="Credit Score Description Label">
+                    <rect key="frame" x="0.0" y="0.0" width="204" height="48"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="478" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25Y-e9-cVF" userLabel="Score Label">
+                    <rect key="frame" x="0.0" y="53" width="204" height="58"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="ng8-yL-FZE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="60"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="out of 700" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpS-8q-qTM" userLabel="Maximum Score Label">
+                    <rect key="frame" x="0.0" y="116" width="204" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ARr-Td-j2Y">
+                    <rect key="frame" x="84" y="64" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="3HL-Ba-cni" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="1za-L0-F6a"/>
+                <constraint firstItem="bpS-8q-qTM" firstAttribute="trailing" secondItem="3HL-Ba-cni" secondAttribute="trailing" id="2A9-Zo-sMk"/>
+                <constraint firstItem="25Y-e9-cVF" firstAttribute="top" secondItem="3HL-Ba-cni" secondAttribute="bottom" constant="5" id="CjD-Lb-5rf"/>
+                <constraint firstItem="25Y-e9-cVF" firstAttribute="leading" secondItem="3HL-Ba-cni" secondAttribute="leading" id="OHn-rX-DKg"/>
+                <constraint firstItem="ARr-Td-j2Y" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Ris-X7-Vdn"/>
+                <constraint firstItem="25Y-e9-cVF" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="XvI-1n-vD8"/>
+                <constraint firstItem="ARr-Td-j2Y" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="cPZ-Xi-dQB"/>
+                <constraint firstItem="bpS-8q-qTM" firstAttribute="top" secondItem="25Y-e9-cVF" secondAttribute="bottom" constant="5" id="ct3-Ht-Cfr"/>
+                <constraint firstItem="bpS-8q-qTM" firstAttribute="leading" secondItem="3HL-Ba-cni" secondAttribute="leading" id="f8b-Ak-Sdx"/>
+                <constraint firstItem="25Y-e9-cVF" firstAttribute="trailing" secondItem="3HL-Ba-cni" secondAttribute="trailing" id="mUN-MV-bbk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3HL-Ba-cni" secondAttribute="trailing" id="qCe-g3-VnX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bpS-8q-qTM" secondAttribute="bottom" id="rAX-fK-Duw"/>
+                <constraint firstItem="3HL-Ba-cni" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="x8d-I2-lbt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="activityIndicator" destination="ARr-Td-j2Y" id="DRD-5B-i9N"/>
+                <outlet property="descriptionLabel" destination="3HL-Ba-cni" id="zBk-pE-R8E"/>
+                <outlet property="maximumScoreLabel" destination="bpS-8q-qTM" id="Ug6-Dc-grh"/>
+                <outlet property="scoreLabel" destination="25Y-e9-cVF" id="Zki-f7-EqE"/>
+            </connections>
+            <point key="canvasLocation" x="-52" y="349"/>
+        </view>
+    </objects>
+</document>
