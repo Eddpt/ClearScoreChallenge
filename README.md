@@ -4,6 +4,8 @@ This repo implements the ClearScore challenge of fetching the credit score and s
 
 The API endpoint can be found [here](https://5lfoiyb0b3.execute-api.us-west-2.amazonaws.com/prod/mockcredit/values).
 
+![demo](./snapshots/demo.gif)
+
 ## Requirements
 
 Xcode 9.3 (9E145) + Swift 4.1
@@ -16,7 +18,7 @@ I've used a `UIVisualEffectView` for the blur effect within the `DonutView`. The
 
 The `DonutView` exposes a method `func setup(with childView: UIView)` which allows its users to pass any view to be contained in.
 
-The calculation of the maximum `width` for the contained view is the following (given that it should be a square):
+The calculation of the maximum `width` for the contained view is the following (I've made the assumption that it should be a square):
 
 ```
 h^2 = side^2 + side^2 = 2 * side^2 <=>
